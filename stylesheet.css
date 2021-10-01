@@ -13,6 +13,27 @@
     position: relative;
 }
 
+.animation{
+    animation: slide 0.8s linear, spin 2s linear 0.8s infinite;
+
+}
+
+@keyframes slide{
+    0%{
+        transform: skewX(53deg) translateX(-300%);
+        
+    }
+    100%{
+        transform: skewX(0deg);
+    }
+}
+
+@keyframes spin{
+    0%{
+        transform: rotateY(360deg);
+    }
+  }
+
 nav{
     display: flex;
     padding: 2% 6%;
